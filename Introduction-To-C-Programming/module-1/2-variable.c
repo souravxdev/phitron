@@ -13,4 +13,4 @@ int main(){
     printf("%.2f\n", f);
     printf("%c", c);
     return 0;
-}
+} 

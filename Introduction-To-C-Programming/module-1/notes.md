@@ -2,18 +2,24 @@
 ### Basic Syntax, Variables and Data Types
 
 `Module Overview`
-- What is Programming?
+- What is Programming? 
+    - Computer কে code এর মাধ্যমে instruction দিয়ে কোন কাজ করানো।
 - Why do we need to learn Programming?
-- Computer can do 10^7 to 10^8 operations per second.
+    - Computer অনেক fast। Computer কে দিয়ে অনেক দ্রুত কাজ করানোর জন্য programming শিখতে হয়।
+    - Computer can do 10^7 to 10^8 operations per second.
 - What is a Programming Language?
+    - Computer কে যে language এ instruction দেয়া হয় তাই হচ্ছে Programming Language। 
 - Which Programming Language should I start with as a begginer?
+    - C
 - Why choose C?
     - C is a Structured Programming Language.
+    - C is a sychronus programming language, it executes it's code line by line.
     - C is the mother of all Programming Language.
+    - All other programming languages are build on the fundamentals of C.
     - Based on fundamental concepts of C, all programming languages are built.
+    - As a begginer we should not use tools, build in libraries or functions to learn programming.
 - Python is developed using C++.
 - C++ is the update version of C.
-- As a begginer we should not use tools, build in libraries or functions to learn programming.
 
 `Introduction`
 - VS Code, Code Blocks, Online C compiler
@@ -24,7 +30,7 @@
 - What is header file?
     - Pre-written codes
     - Reduce repetitive code and consumption of time
-    - Helps to write complecated code
+    - Helps to write complicated code
 
 `First C Program`
 ```c
@@ -40,12 +46,14 @@ int main(){
 - `printf` function means, something within the function, will display in the terminal.
 - `.h` is the extention of the header file.
 - Header file is written withing angular brackets.
-- We have to call a function using ().
-- What we want to display using printf() function, we have to put them within " ".
-- Function is something which do some operations.
 - stdio: standard input and output.
 - Header file is like a brain which tells/send signal to main function to do certain tasks.
+- Function is something which do some operations.
 - Any C program starts it's execution with `main()` function.
+- We have to call a function using ().
+- int main() - Here `int` is the return type of the `main` function.
+- Everything we want to do in a function, have to write withing the parantheses.
+- What we want to display using printf() function, we have to put them within " ".
 - We have to end each `statement` with semicolon(;).
 - `return 0`, it means the code is correct. When compiler sees return 0, it understand that code is succesfully run.
 - <>, angular brackets
@@ -84,13 +92,17 @@ int main(){
 - char : 1 byte
 
 - Character variable must be kept withing single('') quotation.
+- Must contain the character value in a single quotation : `char c = '@'`
 
 `Printing variables`
 - Format Specifier
 - আমরা যদি কোন variable এর value print করতে চাই, তাহলে আমাদের format specifier এর মাধ্যমে print করতে হবে।
 - int : %d
+- long long int : %lld
 - float : %f
+- double : %lf
 - char : %c
+- string : %s
 
 - float by default দশমিকের পরে ৬ ঘর পর্যন্ত print করে।
 - We can control the digits we want to print for floating numbers after point: `%.2f`
@@ -107,6 +119,7 @@ int main(){
 
 `How to take input in C`
 - User এর value নিয়ে কাজ করতে হলে আমাদের input নিতে হবে।
+- আমরা যদি কোন variable এর value scan করতে(input নিতে) চাই, তাহলে আমাদের format specifier এর মাধ্যমে scan করতে হবে।
 - scanf() function(written in stdio.h header file) ব্যাবহার করে user থেকে input নেয়া হয়।
 - scanf() function ব্যাবহার করে, variable এর মধ্যে যে garbage value আছে সেই value তাকে cahnge/replace করা হয়।
 - & : address of a variable, reference sign, only used in scanf().
