@@ -14,7 +14,7 @@ int main(){
         }
     }
     else{
-        printf("Ferot chole ashbo.\n");
+        printf("Kothao jabo na.\n");
     }
     return 0;
 }
