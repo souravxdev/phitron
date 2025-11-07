@@ -34,6 +34,7 @@ This repository serves as my **digital notebook** â€” a public record of what Iâ
 |:-------:|:--------------------------------------------|:-------------------------------|
 | -1 | [Welcome Module](./Introduction-To-C-Programming/module-1/) | Do's & Don'ts |
 | 00 | [Orientation & Setup](./Introduction-To-C-Programming/module-0/) | Assignment, Exams & Setup |
+| 13 | [Nested Loop and Pattern](./Introduction-To-C-Programming/module-13/) | Nested loop and it's use cases |
 
 
 

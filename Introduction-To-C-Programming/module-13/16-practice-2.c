@@ -1,6 +1,5 @@
 // pyramid of numbers with spaces pattern
 
-
 #include <stdio.h>
 
 int main()

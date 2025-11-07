@@ -308,31 +308,175 @@ Explanation:  ডিসেন্ডিং অর্ডারে সাজান�
 
 # Extra Practice Problem of Module - 13
 
-1. Explain why we need long long int data type? 
-- We use long long int in C to store very large integers that exceed the range of regular int. It typically holds 8 bytes of data, allowing values up to about 9 quintillion(about ±9×10¹⁸ range). Use the %lld format specifier when printing or scanning long long int values.
-
-2. Write all the rules for naming a variable in C programming.
-    1. Must start with a letter or underscore.
-    2. Can contain only letters, digits, and underscores.
-    3. Case sensitive.
-    4. No spaces allowed.
-    5. Cannot use reserved keywords.
-    6. Should be meaningful.
-    7. Maximum length recognized is at least 31 characters.
-
-3. Write a C program that will take 2 numbers from the user and then print the 2nd number first and then first number.  
+1. Write code te get the following pattern.
 ```c
-#include<stdio.h>
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+```
+```c
+#include <stdio.h>
 
-int main(){
-    int fNum;
-    int sNum;
-    printf("Enter the first number: ");
-    scanf("%d", &fNum);
-    printf("Enter the second number: ");
-    scanf("%d", &sNum);
+int main()
+{
+    int n, star = 1;
+    scanf("%d", &n);
+    int space = n - 1;
 
-    printf("Printing the second number: %d\n", sNum);
-    printf("Printing the first number: %d\n", fNum);
+    for (int i = 1; i <= n; i++) // for printing lines
+    {
+        for (int j = 1; j <= space; j++) // for printing space
+        {
+            printf(" ");
+        } 
+        for (int k = 1; k <= star; k++) // for printing star
+        { 
+            printf("* ");
+        }
+        printf("\n");
+        star++;
+        space--;
+    }
+    return 0;
+}
+```
+
+2. Write code te get the following pattern.
+```c
+    1 
+   1 2 
+  1 2 3 
+ 1 2 3 4 
+1 2 3 4 5 
+```
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n, star = 1;
+    scanf("%d", &n);
+    int space = n - 1;
+
+    for (int i = 1; i <= n; i++) // for printing lines
+    {
+        for (int j = 1; j <= space; j++) // for printing space
+        {
+            printf(" ");
+        } 
+        for (int k = 1; k <= star; k++) // for printing star
+        { 
+            printf("%d ", k);
+        }
+        printf("\n");
+        star++;
+        space--;
+    }
+    return 0;
+}
+```
+
+3. Write code te get the following pattern.
+```c
+*****
+ ****
+  ***
+   **
+    *
+```
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int star = n;
+    int space = 0;
+
+    for (int i = 1; i <= n; i++) // for printing lines
+    {
+        for (int j = 0; j < space; j++) // for printing space
+        {
+            printf(" ");
+        } 
+        for (int k = star; k >= 1; k--) // for printing star
+        { 
+            printf("*");
+        }
+        printf("\n");
+        star--;
+        space++;
+    }
+    return 0;
+}
+```
+
+4. Write code te get the following pattern.
+```c
+*********
+ *******
+  *****
+   ***
+    *
+```
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    int star = n * 2 - 1;
+    int space = 0;
+
+    for (int i = 1; i <= n; i++) // for printing lines
+    {
+        for (int j = 0; j < space; j++) // for printing space
+        {
+            printf(" ");
+        } 
+        for (int k = star; k >= 1; k--) // for printing star
+        { 
+            printf("*");
+        }
+        printf("\n");
+        star -= 2;
+        space++;
+    }
+    return 0;
+}
+```
+
+5. Write code te get the following pattern.
+```c
+A 
+A B 
+A B C 
+A B C D 
+A B C D E 
+```
+```c
+#include <stdio.h>
+
+int main()
+{
+
+    int n, star = 1;
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) // for printing lines
+    {
+        for (int j = 1; j <= star; j++) // for printing capital letters in each line
+        {
+            printf("%c ", 'A' + j - 1);
+        }
+        printf("\n");
+        star++;
+    }
+
+    return 0;
 }
 ```

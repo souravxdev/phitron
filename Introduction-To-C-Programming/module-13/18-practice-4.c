@@ -6,7 +6,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    int star = n;
+    int star = n * 2 - 1;
     int space = 0;
 
     for (int i = 1; i <= n; i++) // for printing lines

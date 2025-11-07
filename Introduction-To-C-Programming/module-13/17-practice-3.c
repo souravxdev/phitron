@@ -6,7 +6,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    int star = n * 2 - 1;
+    int star = n;
     int space = 0;
 
     for (int i = 1; i <= n; i++) // for printing lines
@@ -20,7 +20,7 @@ int main()
             printf("*");
         }
         printf("\n");
-        star -= 2;
+        star--;
         space++;
     }
     return 0;
