@@ -1,6 +1,7 @@
 // header
 #include<stdio.h>
 
+// body
 int main(){
     int a = 10;
     int b = 20;
